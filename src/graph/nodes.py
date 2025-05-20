@@ -17,6 +17,7 @@ from src.tools.search import LoggedTavilySearch
 from src.tools import (
     crawl_tool,
     get_web_search_tool,
+    law_lookup,
     python_repl_tool,
 )
 
@@ -472,7 +473,11 @@ async def researcher_node(
         state,
         config,
         "researcher",
-        [get_web_search_tool(configurable.max_search_results), crawl_tool],
+        [
+            get_web_search_tool(configurable.max_search_results),
+            crawl_tool,
+            law_lookup,
+        ],
     )
 
 
