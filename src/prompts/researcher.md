@@ -13,6 +13,7 @@ You have access to two types of tools:
 1. **Built-in Tools**: These are always available:
    - **web_search_tool**: For performing web searches
    - **crawl_tool**: For reading content from URLs
+   - **law_lookup**: For retrieving German law sections from the local database
 
 2. **Dynamic Loaded Tools**: Additional tools that may be available depending on the configuration. These tools are loaded dynamically and will appear in your available tools list. Examples include:
    - Specialized search tools
